@@ -13,10 +13,32 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-</head>
-<%= render 'layouts/header' %>
-<body>
 
+	<link href='http://fonts.googleapis.com/css?family=Orienta' rel='stylesheet' type='text/css'>
+</head>
+<style type="text/css">
+	body{
+	font-family: 'Orienta', sans-serif;
+	background-image: url('assets/shattered.png');
+}
+
+.button{
+	background: #d92e2e;
+	padding: 16px 75px;
+	border-radius: 8px;
+}
+
+nav{
+	background: blue;
+	border-bottom: 10px solid black;
+}
+</style>
+<script type="text/javascript">
+	$('body').loadie();
+</script>
+
+<body>
+<%= render 'layouts/header' %>
 <%= yield %>
 
 </body>

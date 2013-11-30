@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+
+
+body{
+	font-family: 'Orienta', sans-serif;
+}
