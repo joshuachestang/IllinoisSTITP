@@ -1,26 +1,34 @@
+<script type="text/javascript">
+  $(document).ready(function () {
+  		$('#bar-0').jqbar({ label: 'Percentage of all Illinois Pregnancies', value: 7, barColor: '#D64747', orientation: 'h', barWidth: 20 });
+      $('#bar-1').jqbar({ label: 'Percentage of all STI cases', value: 77.5, barColor: '#D64747', orientation: 'h', barWidth: 20 });
+      $('#bar-2').jqbar({ label: 'Percentage of all STI cases', value: 20.8, barColor: '#D64747', orientation: 'h', barWidth: 20 });
+      $('#bar-3').jqbar({ label: 'Percentage of all STI cases', value: 1.7, barColor: '#D64747', orientation: 'h', barWidth: 20 });
+  });
+</script>
 <div class="container">
 	<section><h2 class="text-center" style="font-family: 'Orienta', sans-serif;
-"><i class="icon-heart" style="color:red;"></i>Chicago Sexually Transmitted Diseases and Teen Pregnancy Breakdown</h2>
+"><i class="icon-heart" style="color:red;"></i>Illinois Sexually Transmitted Diseases and Teen Pregnancy Breakdown</h2>
 	<h2 style="color:red;" class="text-center">The total estimated direct cost of STIs annually in the U.S. is $15.6 billion...</h2>
 	<h2 style="color:red;" class="text-center">Teen childbearing in the United States cost taxpayers (federal, state, and local) at least 
 $9.1 billion...</h2></section>
 
-
-	<section>Legend</section>
 </div>
 <div class="container">
-	<section><h2>Teen Pregnancy</h2>
+
+	<section class="analysis-section" id="tp"><h2>Teen Pregnancy 13,026 cases in 2011</h2>
+		<br /><div id="bar-0"></div>
 		<iframe id="teen-preg-iframe" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://esrihax.maps.arcgis.com/home/webmap/templates/OnePane/basicviewer/embed.html?webmap=d9872a08de7c493b900787b91a235f59&amp;gcsextent=-94.0934,37.9694,-81.9645,42.9556&amp;displayslider=true&amp;displayscalebar=true&amp;displaylegend=true"></iframe><br /><small><a href="http://esrihax.maps.arcgis.com/home/webmap/viewer.html?webmap=d9872a08de7c493b900787b91a235f59&amp;extent=-94.0934,37.9694,-81.9645,42.9556" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small>
 	</section>
 </div>
 <div class="container">
-	<section><h3>Chlamydia</h3><iframe id="chlamydia-iframe" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://esrihax.maps.arcgis.com/home/webmap/templates/OnePane/basicviewer/embed.html?webmap=3b8341f757f54e49867afdf670b50d5b&amp;gcsextent=-93.2152,38.016,-81.0863,42.999&amp;displayslider=true&amp;displayscalebar=true&amp;displaylegend=true"></iframe><br /><small><a href="http://esrihax.maps.arcgis.com/home/webmap/viewer.html?webmap=3b8341f757f54e49867afdf670b50d5b&amp;extent=-93.2152,38.016,-81.0863,42.999" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small></section>
+	<section class="analysis-section" id="ch"><h3>Chlamydia 67,701 cases in 2012<br /><div id="bar-1"></div></h3><iframe id="chlamydia-iframe" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://esrihax.maps.arcgis.com/home/webmap/templates/OnePane/basicviewer/embed.html?webmap=3b8341f757f54e49867afdf670b50d5b&amp;gcsextent=-93.2152,38.016,-81.0863,42.999&amp;displayslider=true&amp;displayscalebar=true&amp;displaylegend=true"></iframe><br /><small><a href="http://esrihax.maps.arcgis.com/home/webmap/viewer.html?webmap=3b8341f757f54e49867afdf670b50d5b&amp;extent=-93.2152,38.016,-81.0863,42.999" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small></section>
 
 
-	<section><h3>Gonorrhea</h3><iframe id="gonorrhea-iframe" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://esrihax.maps.arcgis.com/home/webmap/templates/OnePane/basicviewer/embed.html?webmap=16a67d0f424943308af6f8c31cca034c&amp;gcsextent=-93.2152,38.016,-81.0863,42.999&amp;displayslider=true&amp;displayscalebar=true&amp;displaylegend=true&amp;displaydetails=true"></iframe><br /><small><a href="http://esrihax.maps.arcgis.com/home/webmap/viewer.html?webmap=16a67d0f424943308af6f8c31cca034c&amp;extent=-93.2152,38.016,-81.0863,42.999" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small></section>
+	<section class="analysis-section" id="go"><h3>Gonorrhea 18,149 cases in 2012<br /><div id="bar-2"></div></h3><iframe id="gonorrhea-iframe" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://esrihax.maps.arcgis.com/home/webmap/templates/OnePane/basicviewer/embed.html?webmap=16a67d0f424943308af6f8c31cca034c&amp;gcsextent=-93.2152,38.016,-81.0863,42.999&amp;displayslider=true&amp;displayscalebar=true&amp;displaylegend=true&amp;displaydetails=true"></iframe><br /><small><a href="http://esrihax.maps.arcgis.com/home/webmap/viewer.html?webmap=16a67d0f424943308af6f8c31cca034c&amp;extent=-93.2152,38.016,-81.0863,42.999" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small></section>
 
 
-	<section><h3>Syphilis</h3><iframe id="syphilis-iframe" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://esrihax.maps.arcgis.com/home/webmap/templates/OnePane/basicviewer/embed.html?webmap=a9a939107b114418a11fbd587f62690c&amp;gcsextent=-93.2152,38.016,-81.0863,42.999&amp;displayslider=true&amp;displayscalebar=true&amp;displaylegend=true&amp;displaydetails=true"></iframe><br /><small><a href="http://esrihax.maps.arcgis.com/home/webmap/viewer.html?webmap=a9a939107b114418a11fbd587f62690c&amp;extent=-93.2152,38.016,-81.0863,42.999" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small></section>
+	<section class="analysis-section" id="sy" style="margin-bottom:40px;"><h3>Syphilis 1,500 cases in 2012<br /><div id="bar-3"></div></h3><iframe id="syphilis-iframe" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://esrihax.maps.arcgis.com/home/webmap/templates/OnePane/basicviewer/embed.html?webmap=a9a939107b114418a11fbd587f62690c&amp;gcsextent=-93.2152,38.016,-81.0863,42.999&amp;displayslider=true&amp;displayscalebar=true&amp;displaylegend=true&amp;displaydetails=true"></iframe><br /><small><a href="http://esrihax.maps.arcgis.com/home/webmap/viewer.html?webmap=a9a939107b114418a11fbd587f62690c&amp;extent=-93.2152,38.016,-81.0863,42.999" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small></section>
 </div>
 <script type="text/javascript">
 $(document).ready(function() {

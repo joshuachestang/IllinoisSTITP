@@ -16,3 +16,8 @@
 body{
 	font-family: 'Orienta', sans-serif;
 }
+
+.analysis-section{
+	border-top:10px solid white;
+	margin-top:10px;
+}
