@@ -27,7 +27,7 @@ IllinoisSexualHealth::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -68,6 +68,8 @@ IllinoisSexualHealth::Application.configure do
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
+
+  config.assets.precompile += %w( .svg .eot .woff .ttf )
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
