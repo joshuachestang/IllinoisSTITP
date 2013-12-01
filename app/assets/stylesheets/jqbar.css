@@ -39,12 +39,13 @@
 {
     display: inline-block;
     margin-left: 5px;
-    font-size: 11px;
+    font-size: 26px;
+    color: rgb(254, 118, 2);
     font-weight: bold;
 }
 .jqbar.horizontal .bar-percent
 {
-    font-size: 11px;
+    font-size: 26px;
     font-weight: bold;
     height: 20px;
     margin-bottom: 5px;
