@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation" id="nav-bar" style="
+<nav id="header" class="navbar navbar-default" role="navigation" id="nav-bar" style="
   background: rgb(103, 212, 143);
   border-bottom: 10px solid white;">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -56,3 +56,20 @@ a{
   text-shadow: 0 0px 0 rgba(255,255,255,1);
 }
 </style>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("header").headroom({
+      "tolerance": 20,
+      "offset": 100,
+      "classes": {
+        "initial": "animated",
+        "pinned": "bounceInDown",
+        "unpinned": "bounceOutUp"
+      }
+    });
+
+    // to destroy
+    $("#header").headroom("destroy");
+  });
+</script>
