@@ -33,13 +33,7 @@
           <li><a href="#sy">Syphilis</a></li>
         </ul>
       </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Linkedin</a></li>
-        </ul>
-      </li>
+      <div id="share"></div>
     </ul>
   </div><!-- /.navbar-collapse -->
   </div>
@@ -59,6 +53,8 @@ a{
 
 <script type="text/javascript">
   $(document).ready(function(){
+    
+
     $("header").headroom({
       "tolerance": 20,
       "offset": 100,
@@ -68,6 +64,7 @@ a{
         "unpinned": "bounceOutUp"
       }
     });
+
 
     // to destroy
     $("#header").headroom("destroy");
